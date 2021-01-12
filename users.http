@@ -1,0 +1,30 @@
+### Get all users
+GET http://localhost:4000/users
+### Get user
+GET http://localhost:4000/user/2
+### Get users by nationality
+GET http://localhost:4000/users/Colombia
+### Create user
+POST http://localhost:4000/users
+content-type: application/json
+
+{
+    "fisrt_name": "Damian",
+    "second_name": "De Jesus",
+    "surname": "Zsiros gOMEX",
+    "age": "14",
+    "nationality": "Colombia"
+}
+### Update user
+PUT http://localhost:4000/user/2
+content-type: application/json
+
+{
+    "fisrt_name": "Jose",
+    "second_name": "David",
+    "surname": "Barrios",
+    "age": "25",
+    "nationality": "Colombia"
+}
+### Delete user
+DELETE http://localhost:4000/user/9
